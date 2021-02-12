@@ -13,12 +13,13 @@
 
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
 header .container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -55,7 +56,11 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-.titulo{
+.filme-principal a{
+    text-decoration: none;
+}
+
+.filme-principal .titulo{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -63,7 +68,7 @@ header nav a:hover{
 
 .filme-principal .descricao{
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 
 .botao{
@@ -97,7 +102,15 @@ header nav a:hover{
 }
 
 .box-filme{
-    height: 30%;
-    width: 15%;
+    height: 100%;
+    width: 100%;
     display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 40%;
 }
